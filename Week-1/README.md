@@ -1,7 +1,9 @@
 A - What is the main functionality of the browser?
 Explanation – The main functionality of browser is to read the requested HTML-document and render it into the webpage, to render HTML-document into webpage browser go through the sequence of processes as follows.
 
-browser work flow
+
+![broserworkflow](https://user-images.githubusercontent.com/100768787/213912976-6887f9ea-7d9f-4fc5-bae6-c8a504b20a63.png)
+
 
 B - High Level Components of a browser.
 Explanation B – Browser’s higher order components are
@@ -14,14 +16,18 @@ UI backend: used for drawing basic widgets like combo boxes and windows.
 JavaScript interpreter. Used to parse and execute JavaScript code.
 Data storage. This is a persistence layer. The browser may need to save all sorts of data locally, such as cookies.
 highlevelComponent
+![highlevelComponent](https://user-images.githubusercontent.com/100768787/213912980-095a0581-811c-446e-8451-ed7a62bd6d4e.png)
 
+browser work flow
 C - Rendering engine and its use.
 Explanation C - The responsibility of the rendering engine is well... Rendering, that is display of the requested contents on the browser screen. Rendering engine use: - By default, the rendering engine can display HTML and XML documents and images. It can display other types of data via plug-ins or extension; for example, displaying PDF documents using a PDF viewer plug-in. However, in this chapter we will focus on the main use case: displaying HTML and images that are formatted using CS
+![renderingEngine](https://user-images.githubusercontent.com/100768787/213912983-705bebc7-01ab-4bed-91eb-c4a1d1e6c220.png)
 
 renderingEngine
 
 D - Parsers (HTML, CSS, etc)
 Explanation D - a parser is a program, usually part of a compiler, that receives input in the form of sequential source program instructions, interactive online commands, markup tags, or some other defined interface and breaks them up into parts that can be used by other components in programming. Parsers usually divide the work between two components: the lexer (sometimes called tokenizer) that is responsible for breaking the input into valid tokens, and the parser that is responsible for constructing the parse tree by analyzing the document structure according to the language syntax rules. The lexer knows how to strip irrelevant characters like white spaces and line breaks.
+![parser](https://user-images.githubusercontent.com/100768787/213912986-7b350360-2d7e-4e01-8d0b-df41476e65ba.png)
 
 parser
 
@@ -30,6 +36,7 @@ Explanation - The Script processor allows you to specify your own processor logi
 
 F - Tree construction
 Explanation – Rendering process has three tree construction first is DOM Tree then CSSOM Tree then Render Tree which consist of DOM and CSSOM Trees. DOM Tree – When the browser reads HTML code, whenever it encounters an HTML element like html, body, div etc., it creates a JavaScript object called a Node. Eventually, all HTML elements will be converted to JavaScript objects. After the browser has created Nodes from the HTML document, it has to create a tree-like structure of these node objects. Since our HTML elements in the HTML file are nested inside each other, the browser needs to replicate that but using Node objects it has previously created. This will help the browser efficiently render and manage the webpage throughout its lifecycle.
+![domtree](https://user-images.githubusercontent.com/100768787/213912982-5aa7910e-eef3-4773-90da-fb424c933c14.png)
 
 domtree
 
